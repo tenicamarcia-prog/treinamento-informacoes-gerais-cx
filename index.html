@@ -1,1 +1,187 @@
-see file
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Informações Gerais & Atualização Cadastral | Márcia Treinamentos × Ateky CX</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#0A1F3D;--navy-deep:#061528;--blue:#1B6EF3;--blue-soft:#E8F1FE;--teal:#0EA5E9;--success:#10B981;--danger:#EF4444;--gray-50:#F8FAFC;--gray-100:#F1F5F9;--gray-200:#E2E8F0;--gray-500:#64748B;--gray-700:#334155;--gray-900:#0F172A;--radius:12px;--shadow:0 4px 24px rgba(10,31,61,.08)}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Inter,system-ui,sans-serif;background:var(--gray-50);color:var(--gray-900);line-height:1.6}
+.topbar{position:sticky;top:0;z-index:100;background:var(--navy);color:#fff;padding:.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.brand{display:flex;align-items:center;gap:.85rem}.brand-logo{font-weight:800;font-size:1.15rem}.brand-logo span{color:var(--teal)}
+.badge-mt{background:linear-gradient(135deg,#1B6EF3,#0EA5E9);color:#fff;font-size:.7rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;text-transform:uppercase;letter-spacing:.04em}
+.nav-links{display:flex;gap:.35rem;flex-wrap:wrap}.nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-size:.82rem;font-weight:500;padding:.4rem .75rem;border-radius:8px}.nav-links a:hover{background:rgba(255,255,255,.12);color:#fff}
+.btn-print{background:var(--blue);color:#fff;border:none;padding:.5rem 1rem;border-radius:8px;font-weight:600;font-size:.85rem;cursor:pointer}
+.hero{background:linear-gradient(160deg,var(--navy-deep),var(--navy) 50%,#0E2A55);color:#fff;padding:3.5rem 1.5rem 4rem;text-align:center}
+.hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.9rem,5vw,2.75rem);font-weight:800;line-height:1.15;margin-bottom:1.25rem}
+.hero p{font-size:1.05rem;opacity:.9;max-width:640px;margin:0 auto 1.25rem}
+.eyebrow{display:inline-flex;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);padding:.4rem 1rem;border-radius:999px;font-size:.8rem;font-weight:600;margin-bottom:1.5rem}
+.container{max-width:960px;margin:0 auto;padding:0 1.25rem 4rem}
+section{margin-top:2.5rem;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.section-header{background:var(--navy);color:#fff;padding:1.15rem 1.5rem;display:flex;align-items:center;gap:.85rem}
+.section-num{background:var(--blue);width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.95rem}
+.section-header h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.15rem;font-weight:700}
+.section-body{padding:1.5rem}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.info-card{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:1.15rem}
+.info-card h4{font-size:.95rem;font-weight:700;margin-bottom:.5rem;color:var(--navy)}
+.info-card p{font-size:.9rem;color:var(--gray-700)}
+.alert{border-radius:10px;padding:1rem 1.2rem;margin:1.25rem 0;display:flex;gap:.85rem;align-items:flex-start;font-size:.92rem}
+.alert-warning{background:#FFFBEB;border:1px solid #FDE68A;color:#92400E}
+.alert-success{background:#ECFDF5;border:1px solid #A7F3D0;color:#065F46}
+.step{display:flex;gap:1rem;margin-bottom:1.5rem}.step-num{width:36px;height:36px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;flex-shrink:0}
+.step-content h4{font-size:1rem;font-weight:700;margin-bottom:.35rem;color:var(--navy)}.step-content p{font-size:.92rem;color:var(--gray-700)}
+.system-mock{background:#1E293B;border-radius:10px;overflow:hidden;margin:1.25rem 0;font-size:.82rem}
+.system-bar{background:#0F172A;padding:.5rem .85rem;display:flex;align-items:center;gap:.5rem;color:#94A3B8}
+.system-dot{width:10px;height:10px;border-radius:50%}.system-dot.r{background:#EF4444}.system-dot.y{background:#F59E0B}.system-dot.g{background:#10B981}
+.system-body{padding:1rem;color:#E2E8F0}.system-row{display:grid;grid-template-columns:140px 1fr;gap:.5rem;margin-bottom:.65rem;align-items:center}
+.system-label{color:#94A3B8;font-size:.78rem}.system-input{background:#334155;border:1px solid #475569;border-radius:6px;padding:.4rem .65rem;color:#F1F5F9;font-size:.82rem}
+.system-input.highlight{border-color:var(--teal);background:#0C4A6E;color:#E0F2FE;font-weight:600}
+.analogy{background:linear-gradient(135deg,#EEF2FF,#E0F2FE);border-left:4px solid var(--blue);border-radius:0 10px 10px 0;padding:1.15rem 1.25rem;margin:1.25rem 0}
+.analogy-title{font-weight:700;color:var(--navy);margin-bottom:.4rem;font-size:.95rem}.analogy p{font-size:.9rem;color:var(--gray-700)}
+.loja-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem}
+.loja-card{border-radius:10px;padding:.9rem 1rem;font-size:.88rem}.loja-card.sim{background:#ECFDF5;border:1px solid #A7F3D0}.loja-card.nao{background:#FEF2F2;border:1px solid #FECACA}.loja-card strong{display:block;margin-bottom:.25rem}
+.sim-container{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:12px;padding:1.25rem;margin-bottom:1.5rem}
+.sim-chat{display:flex;flex-direction:column;gap:.75rem;margin-bottom:1rem}
+.bubble{max-width:85%;padding:.7rem 1rem;border-radius:14px;font-size:.9rem}.bubble.client{background:#fff;border:1px solid var(--gray-200);align-self:flex-start;border-bottom-left-radius:4px}
+.bubble .who{font-size:.72rem;font-weight:700;opacity:.7;margin-bottom:.2rem}
+.sim-choice{background:#fff;border:2px solid var(--gray-200);border-radius:10px;padding:.85rem 1rem;text-align:left;cursor:pointer;font-size:.9rem;font-family:inherit;display:block;width:100%;margin-bottom:.5rem}
+.sim-choice:hover{border-color:var(--blue);background:var(--blue-soft)}.sim-choice.correct{border-color:var(--success);background:#ECFDF5}.sim-choice.wrong{border-color:var(--danger);background:#FEF2F2}
+.sim-feedback{margin-top:1rem;padding:1rem;border-radius:10px;font-size:.9rem;display:none}.sim-feedback.show{display:block}.sim-feedback.ok{background:#ECFDF5;border:1px solid #A7F3D0;color:#065F46}.sim-feedback.bad{background:#FEF2F2;border:1px solid #FECACA;color:#991B1B}
+.check-item{display:flex;align-items:flex-start;gap:.75rem;padding:.75rem 0;border-bottom:1px solid var(--gray-100);cursor:pointer}.check-item input{width:20px;height:20px;margin-top:2px;accent-color:var(--blue)}
+.quiz-q{margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--gray-100)}.quiz-q h4{font-size:.98rem;margin-bottom:.75rem;color:var(--navy)}
+.quiz-opt{display:block;width:100%;text-align:left;padding:.7rem 1rem;margin-bottom:.4rem;border:2px solid var(--gray-200);border-radius:8px;background:#fff;cursor:pointer;font-size:.88rem;font-family:inherit}.quiz-opt:hover{border-color:var(--blue)}.quiz-opt.selected-correct{border-color:var(--success);background:#ECFDF5}.quiz-opt.selected-wrong{border-color:var(--danger);background:#FEF2F2}
+.footer{background:var(--navy-deep);color:rgba(255,255,255,.7);text-align:center;padding:2rem 1.5rem;font-size:.85rem}.footer strong{color:#fff}
+.fonte{background:var(--gray-100);border-radius:8px;padding:.85rem 1rem;font-size:.82rem;color:var(--gray-700);margin-top:1.5rem}
+@media (max-width:640px){.nav-links{display:none}.system-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="topbar">
+<div class="brand"><div class="brand-logo">ateky <span>Internet</span></div><div class="badge-mt">Márcia Treinamentos</div></div>
+<nav class="nav-links">
+<a href="#quando">Quando abrir</a><a href="#analisar">Analisar</a><a href="#abrir">Como abrir</a><a href="#lojas">Lojas</a><a href="#simulacao">Simulação</a><a href="#checklist">Checklist</a><a href="#quiz">Quiz</a>
+</nav>
+<button class="btn-print" onclick="window.print()">🖨 Imprimir Guia</button>
+</header>
+<div class="hero">
+<div class="eyebrow">Centro de Soluções · Treinamento CX · Setor Customer Experience</div>
+<h1>Informações Gerais &<br>Atualização Cadastral</h1>
+<p>Treinamento prático e interativo para o time de CX. Você vai dominar <strong>quando</strong> abrir o atendimento, <strong>como</strong> registrar corretamente no sistema e <strong>o que</strong> informar sobre as lojas — com simulação real e analogias do dia a dia.</p>
+<p style="margin-top:1.25rem;font-size:.9rem;opacity:.75">Destinado especialmente a <strong>Maria</strong> e ao time de CX · Novembro 2026</p>
+</div>
+<div class="container">
+<section id="quando">
+<div class="section-header"><div class="section-num">01</div><h2>Quando abrimos Informações Gerais?</h2></div>
+<div class="section-body">
+<p style="margin-bottom:1.25rem;font-size:.95rem">Abrimos o atendimento <strong>INFORMAÇÕES GERAIS / ATUALIZAÇÃO CADASTRAL</strong> quando o cliente entra em contato para:</p>
+<div class="card-grid">
+<div class="info-card"><h4>📋 Atualizar dados</h4><p>Telefone, e-mail ou outras informações cadastrais (exceto mudança de endereço físico).</p></div>
+<div class="info-card"><h4>🏪 Dúvidas sobre lojas</h4><p>Endereço, horário de funcionamento, se recebe pagamento, se trabalha em feriados.</p></div>
+<div class="info-card"><h4>❓ Dúvidas gerais</h4><p>Qualquer pergunta que <strong>não se encaixe</strong> em nenhum outro atendimento do setor.</p></div>
+</div>
+<div class="alert alert-warning"><span style="font-size:1.3rem">⚠️</span><div><strong>REGRA DE OURO – Endereço</strong><br>Se o cliente entrar em contato para atualizar o endereço, verifique se ele <em>continua no mesmo endereço</em>. Caso contrário o atendimento seria <strong>MUDANÇA DE ENDEREÇO</strong> e não Atualização Cadastral.</div></div>
+</div></section>
+<section id="analisar">
+<div class="section-header"><div class="section-num">02</div><h2>O que analisar antes de abrir o atendimento</h2></div>
+<div class="section-body">
+<div class="step"><div class="step-num">1</div><div class="step-content"><h4>Atualização de telefone ou e-mail?</h4><p>Sim → INFORMACOES GERAIS / ATUALIZACAO CADASTRAL</p></div></div>
+<div class="step"><div class="step-num">2</div><div class="step-content"><h4>Dúvida sobre loja?</h4><p>Sim → INFORMACOES GERAIS / ATUALIZACAO CADASTRAL</p></div></div>
+<div class="step"><div class="step-num">3</div><div class="step-content"><h4>Mudança de endereço físico?</h4><p>Não use este processo. Abra <strong>Mudança de Endereço</strong>.</p></div></div>
+<div class="step"><div class="step-num">4</div><div class="step-content"><h4>Formato do endereço</h4><p>SEMPRE em <strong>MAIÚSCULAS</strong>, sem acentos e sem caracteres especiais. Ex: RUA JOAO DA SILVA 123 SAO LUDGERO</p></div></div>
+</div></section>
+<section id="abrir">
+<div class="section-header"><div class="section-num">03</div><h2>Como abrir o atendimento no sistema</h2></div>
+<div class="section-body">
+<div class="step"><div class="step-num">1</div><div class="step-content"><h4>Abra o cadastro do cliente</h4><p>Aba <strong>ATENDIMENTO</strong> → <strong>NOVO</strong></p></div></div>
+<div class="step"><div class="step-num">2</div><div class="step-content"><h4>Assunto e Processo</h4><p>Ambos: <strong>INFORMACOES GERAIS / ATUALIZACAO CADASTRAL</strong></p>
+<div class="system-mock"><div class="system-bar"><span class="system-dot r"></span><span class="system-dot y"></span><span class="system-dot g"></span><span style="margin-left:.5rem">Sistema Ateky</span></div>
+<div class="system-body"><div class="system-row"><span class="system-label">ASSUNTO</span><div class="system-input highlight">INFORMACOES GERAIS / ATUALIZACAO CADASTRAL</div></div>
+<div class="system-row"><span class="system-label">PROCESSO</span><div class="system-input highlight">INFORMACOES GERAIS / ATUALIZACAO CADASTRAL</div></div></div></div>
+</div></div>
+<div class="step"><div class="step-num">3</div><div class="step-content"><h4>Descreva e salve</h4><p>Descreva o motivo, selecione o canal e <strong>SALVAR</strong>.</p></div></div>
+<div class="step"><div class="step-num">4</div><div class="step-content"><h4>Finalize a O.S.</h4><p>Copie a mensagem → aba Ordem de Serviço → cole e finalize.</p></div></div>
+<div class="analogy"><div class="analogy-title">🧠 Analogia</div><p>Assunto + Processo corretos = etiqueta certa no pedido. Sem isso, o atendimento vai para o setor errado.</p></div>
+</div></section>
+<section id="lojas">
+<div class="section-header"><div class="section-num">04</div><h2>Informações sobre as Lojas (Wiki)</h2></div>
+<div class="section-body">
+<p style="margin-bottom:1rem">Qualquer dúvida de loja → INFORMACOES GERAIS / ATUALIZACAO CADASTRAL.</p>
+<h3 style="font-size:1rem;margin:1.25rem 0 .75rem;color:var(--navy)">💰 Quem aceita dinheiro?</h3>
+<p style="font-size:.9rem;margin-bottom:.75rem"><strong>Nenhuma loja tem máquina de cartão.</strong></p>
+<div class="loja-grid">
+<div class="loja-card sim"><strong>✅ ACEITAM DINHEIRO</strong>Todas as unidades de Tubarão · Capivari de Baixo · Braço do Norte · São Ludgero · Orleans · Urussanga</div>
+<div class="loja-card nao"><strong>❌ NÃO TÊM CAIXA</strong>Morro da Fumaça · Lauro Muller · Treze de Maio · Estação Cocal · Sangão · Cocal do Sul · Pinhais e Boa Vista (PR)</div>
+</div>
+<h3 style="font-size:1rem;margin:1.5rem 0 .75rem;color:var(--navy)">🕐 Horários</h3>
+<div class="card-grid">
+<div class="info-card"><h4>São Ludgero</h4><p>Seg–Sex: 08h–12h / 13h30–18h30<br>Sáb: 08h–12h</p></div>
+<div class="info-card"><h4>Demais lojas</h4><p>Seg–Sex: 08h–12h / 13h30–18h00<br>Sáb: 08h–12h</p></div>
+</div>
+<p style="margin-top:1rem;font-size:.9rem">Endereços: <a href="https://ateky.com.br/" target="_blank" style="color:var(--blue);font-weight:600">ateky.com.br</a> (final da página).</p>
+</div></section>
+<section id="simulacao">
+<div class="section-header"><div class="section-num">05</div><h2>Simulação de Atendimento</h2></div>
+<div class="section-body">
+<p style="margin-bottom:1rem">Você é a atendente Maria (CX). Escolha a melhor resposta.</p>
+<div class="sim-container">
+<div class="sim-chat"><div class="bubble client"><div class="who">Cliente · WhatsApp</div>Oi, quero atualizar meu número de celular no cadastro.</div></div>
+<div class="sim-choices" id="choices1">
+<button class="sim-choice" onclick="responder(1,true,this)">✅ Abrir INFORMACOES GERAIS / ATUALIZACAO CADASTRAL e atualizar o telefone</button>
+<button class="sim-choice" onclick="responder(1,false,this)">❌ Abrir Mudança de Endereço</button>
+<button class="sim-choice" onclick="responder(1,false,this)">❌ Só presencial na loja</button>
+</div><div class="sim-feedback" id="fb1"></div>
+</div>
+<div class="sim-container">
+<div class="sim-chat"><div class="bubble client"><div class="who">Cliente · Telefone</div>Qual o horário da loja de São Ludgero e se aceita dinheiro?</div></div>
+<div class="sim-choices" id="choices2">
+<button class="sim-choice" onclick="responder(2,true,this)">✅ Abrir Informações Gerais. São Ludgero: 08h-12h / 13h30-18h30 (aceita dinheiro)</button>
+<button class="sim-choice" onclick="responder(2,false,this)">❌ Todas as lojas aceitam cartão e dinheiro</button>
+<button class="sim-choice" onclick="responder(2,false,this)">❌ Melhor olhar no site</button>
+</div><div class="sim-feedback" id="fb2"></div>
+</div>
+<div class="sim-container">
+<div class="sim-chat"><div class="bubble client"><div class="who">Cliente · Chat</div>Mudei de casa, quero atualizar o endereço completo.</div></div>
+<div class="sim-choices" id="choices3">
+<button class="sim-choice" onclick="responder(3,false,this)">❌ Abrir Informações Gerais e alterar</button>
+<button class="sim-choice" onclick="responder(3,true,this)">✅ Orientar / abrir Mudança de Endereço</button>
+<button class="sim-choice" onclick="responder(3,false,this)">❌ Alterar na hora no cadastro</button>
+</div><div class="sim-feedback" id="fb3"></div>
+</div>
+</div></section>
+<section id="checklist">
+<div class="section-header"><div class="section-num">06</div><h2>Checklist de Excelência</h2></div>
+<div class="section-body">
+<label class="check-item"><input type="checkbox"/><span>Confirmei se é atualização ou dúvida de loja (não mudança de endereço físico)</span></label>
+<label class="check-item"><input type="checkbox"/><span>Assunto e Processo: INFORMACOES GERAIS / ATUALIZACAO CADASTRAL</span></label>
+<label class="check-item"><input type="checkbox"/><span>Canal selecionado e descrição clara</span></label>
+<label class="check-item"><input type="checkbox"/><span>Endereço em MAIÚSCULAS sem acento</span></label>
+<label class="check-item"><input type="checkbox"/><span>O.S. finalizada corretamente</span></label>
+<div class="alert alert-success" style="margin-top:1.25rem"><strong>Metodologia TBC</strong><br>Não invente informação. Consulte a Wiki e entregue o valor certo.</div>
+</div></section>
+<section id="quiz">
+<div class="section-header"><div class="section-num">07</div><h2>Quiz rápido</h2></div>
+<div class="section-body">
+<div class="quiz-q"><h4>1. Cliente quer atualizar só o e-mail. Qual processo?</h4>
+<button class="quiz-opt" onclick="quiz(this,true)">INFORMACOES GERAIS / ATUALIZACAO CADASTRAL</button>
+<button class="quiz-opt" onclick="quiz(this,false)">MUDANÇA DE ENDEREÇO</button></div>
+<div class="quiz-q"><h4>2. A loja de Morro da Fumaça aceita dinheiro?</h4>
+<button class="quiz-opt" onclick="quiz(this,false)">Sim</button>
+<button class="quiz-opt" onclick="quiz(this,true)">Não. Está na lista das que não têm caixa</button></div>
+<div class="quiz-q"><h4>3. Formato do endereço no sistema?</h4>
+<button class="quiz-opt" onclick="quiz(this,false)">Rua José da Silva, 45 – São Ludgero</button>
+<button class="quiz-opt" onclick="quiz(this,true)">RUA JOSE DA SILVA 45 SAO LUDGERO</button></div>
+<div class="quiz-q"><h4>4. Cliente mudou de casa. O que fazer?</h4>
+<button class="quiz-opt" onclick="quiz(this,false)">Abrir Informações Gerais</button>
+<button class="quiz-opt" onclick="quiz(this,true)">Abrir Mudança de Endereço</button></div>
+</div></section>
+<div class="fonte"><strong>Fontes oficiais (Wiki Ateky)</strong><br>• Informações Gerais → CUSTOMER-EXPERIENCE / FILA_CX / ATENDIMENTOS_INICIAIS / INFORMACOESGERAIS<br>• Informações sobre as Lojas → CUSTOMER-EXPERIENCE / PONTO_DE_ATENDIMENTO / INFORMAÇÕES SOBRE AS LOJAS<br>Atualizado 10/11/2026.</div>
+</div>
+<footer class="footer"><p><strong>Márcia Treinamentos × Ateky Internet</strong><br>Material de treinamento interno · CX · Novembro 2026<br>“Excelência consistente no básico transforma atendimento em retenção.”</p></footer>
+<script>
+function responder(num,correto,btn){const choices=document.getElementById('choices'+num);const fb=document.getElementById('fb'+num);const buttons=choices.querySelectorAll('.sim-choice');buttons.forEach(b=>{b.disabled=true;b.style.cursor='default'});if(correto){btn.classList.add('correct');fb.className='sim-feedback show ok';fb.innerHTML='<strong>✅ Perfeito!</strong> Você aplicou o processo certo.';}else{btn.classList.add('wrong');fb.className='sim-feedback show bad';fb.innerHTML='<strong>❌ Atenção.</strong> Revise a regra de ouro: telefone/e-mail/dúvida de loja = Informações Gerais. Mudança de casa = Mudança de Endereço.';}}
+function quiz(btn,correto){const parent=btn.parentElement;const opts=parent.querySelectorAll('.quiz-opt');opts.forEach(o=>{o.disabled=true;o.style.cursor='default'});if(correto)btn.classList.add('selected-correct');else{btn.classList.add('selected-wrong');opts.forEach(o=>{if(o.onclick.toString().includes('true'))o.classList.add('selected-correct');});}}
+</script>
+</body>
+</html>
